@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mario{
+            width: 600px;
+            height: 500px;
+            position: relative;
+            transition: transform .5s;
+        }
+        .box:hover .mario{
+            transform: rotate(25deg);
+        }
+        .ball{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            top: -300px;
+            left: -60px;
+            transition: transform .5s;
+
+        }
+        .box:hover .ball{
+            transform: translate(500px, 300px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="mario" src="mario.webp" alt="">
+        <img class="ball" src="ball.webp" alt="">
+    </div>
+</body>
+</html>
